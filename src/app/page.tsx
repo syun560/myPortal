@@ -1,6 +1,16 @@
+'use client'
+
 import Script from 'next/script'
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    fetch("https://sheets.googleapis.com/v4/spreadsheets/1XBS6iBZR1AR3aECSuqHLRUQ5zz--6j82WnGPUwTb1lw/values/masterpiece?key=AIzaSyCi75dWmDldMwJZAuS7N1QIRrGVGTH4m8I")
+      .then((res) => res.json())
+      .then((json) => console.log(json))
+      .catch(() => alert("error"));
+  }, []);
+
   return (
   <main className="bg-dark text-light">
     <div className="container shadow mt-3">
@@ -96,6 +106,7 @@ export default function Home() {
                 <h2>Tasks</h2>
                 <ul>
                     <li>need more information</li>
+                    <li>android studio</li>
                 </ul>
                 <h2>Schedule</h2>
 

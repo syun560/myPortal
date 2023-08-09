@@ -1,4 +1,4 @@
-import './globals.css'
+import './index.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Script from 'next/script'
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return(
-    <html lang="en">
+    <html lang="ja">
       <head>
         <meta charSet='utf-8' />
         <title>syun560 page</title>
@@ -25,7 +25,6 @@ export default function RootLayout({
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossOrigin="anonymous"></Script>
-        <link rel="stylesheet" href="index.css" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
