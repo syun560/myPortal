@@ -1,5 +1,4 @@
 'use client'
-import Link from 'next/link'
 
 import Script from 'next/script'
 import { useEffect } from 'react';
@@ -13,9 +12,9 @@ export default function Home() {
   }, []);
 
   return (
-  <main className="text-light trans">
-    <div className="container shadow">
-        <h1 className="border-bottom py-3">syun560 page</h1>
+  <main className="bg-dark text-light">
+    <div className="container shadow mt-3">
+        <h1 className="border-bottom mb-3">syun560 page</h1>
         <div className="shadow trans row">
             <div className="col">
                 <h2>Profile</h2>
@@ -104,7 +103,7 @@ export default function Home() {
             <div className="col">
                 <h2>Time To Live</h2>
                 <p id="RealtimeClockArea">00:00:00</p>
-                <Link href="/task">Tasks</Link>
+                <h2>Tasks</h2>
                 <ul>
                     <li>need more information</li>
                     <li>android studio</li>
