@@ -1,7 +1,16 @@
-.trans {
-  background-color: #071029;
-  background: linear-gradient(#090c14, #102358);
-  opacity: 0.9;
-  margin: 0
+* {
+  margin: 0;
+  padding: 0;
 }
-  
+
+html {
+  height: 100%
+}
+
+body {
+  min-height: 100%;
+  background-color: #071029;
+  background-attachment: fixed !important;
+  background: linear-gradient(#090c14, #091431);
+  opacity: 0.9;
+}

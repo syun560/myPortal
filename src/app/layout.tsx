@@ -14,7 +14,11 @@ export default function RootLayout({
 }) {
   return(
     <html lang="ja">
-      <body>{children}</body>
+      <body>
+        <main className="container shadow text-light pt-2">
+          {children}
+        </main>
+      </body>
     </html>
   )
 }
